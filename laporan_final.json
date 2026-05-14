@@ -1,0 +1,139 @@
+{
+  "judul": "Analisis Normatif Hukum Korupsi Indonesia vs UNCAC",
+  "tanggal": "2026-05-14T10:58:36.195455",
+  "ringkasan_corpus": {
+    "UNCAC": {
+      "jumlah_pasal": 71,
+      "tahun": 2003
+    },
+    "UU_7_2006": {
+      "jumlah_pasal": 9,
+      "tahun": 2006
+    },
+    "UU_31_1999": {
+      "jumlah_pasal": 90,
+      "tahun": 1999
+    },
+    "UU_20_2001": {
+      "jumlah_pasal": 36,
+      "tahun": 2001
+    },
+    "UU_28_1999": {
+      "jumlah_pasal": 50,
+      "tahun": 1999
+    },
+    "UU_30_2002": {
+      "jumlah_pasal": 127,
+      "tahun": 2002
+    },
+    "UU_19_2019": {
+      "jumlah_pasal": 118,
+      "tahun": 2019
+    }
+  },
+  "gap_analysis": {
+    "total_uncac_articles": 71,
+    "diadopsi_penuh": 0,
+    "diadopsi_sebagian": 41,
+    "gap_belum_diadopsi": 30,
+    "threshold_penuh": 0.8,
+    "threshold_sebagian": 0.65,
+    "gap_terbesar": [
+      {
+        "uncac_article": "Article 51",
+        "similarity": 0.4509,
+        "status": "GAP - Belum Diadopsi",
+        "padanan_terbaik": "UU_7_2006 Pasal 66"
+      },
+      {
+        "uncac_article": "Article 59",
+        "similarity": 0.4788,
+        "status": "GAP - Belum Diadopsi",
+        "padanan_terbaik": "UU_7_2006 Pasal 66"
+      },
+      {
+        "uncac_article": "Article 45",
+        "similarity": 0.501,
+        "status": "GAP - Belum Diadopsi",
+        "padanan_terbaik": "UU_20_2001 Pasal 12"
+      },
+      {
+        "uncac_article": "Article 71",
+        "similarity": 0.5078,
+        "status": "GAP - Belum Diadopsi",
+        "padanan_terbaik": "UU_7_2006 Pasal 2"
+      },
+      {
+        "uncac_article": "Article 70",
+        "similarity": 0.5138,
+        "status": "GAP - Belum Diadopsi",
+        "padanan_terbaik": "UU_19_2019 Pasal 40"
+      }
+    ]
+  },
+  "topic_modeling": {
+    "jumlah_topik": 32,
+    "topik_teratas": [
+      {
+        "id": 0,
+        "jumlah_pasal": 67,
+        "kata_kunci": [
+          "yang",
+          "korupsi",
+          "atau",
+          "tindak",
+          "dan"
+        ]
+      },
+      {
+        "id": 1,
+        "jumlah_pasal": 66,
+        "kata_kunci": [
+          "dalam",
+          "sebagaimana",
+          "dimaksud",
+          "setiap",
+          "yang"
+        ]
+      },
+      {
+        "id": 2,
+        "jumlah_pasal": 23,
+        "kata_kunci": [
+          "jelas",
+          "cukup",
+          "ayat",
+          "huruf",
+          "yang"
+        ]
+      },
+      {
+        "id": 3,
+        "jumlah_pasal": 17,
+        "kata_kunci": [
+          "indonesia",
+          "republik",
+          "presiden",
+          "jakarta",
+          "tanggal"
+        ]
+      },
+      {
+        "id": 4,
+        "jumlah_pasal": 14,
+        "kata_kunci": [
+          "paling",
+          "rupiah",
+          "juta",
+          "rp",
+          "lima"
+        ]
+      }
+    ]
+  },
+  "model_yang_digunakan": {
+    "embedding": "LaBSE (Language-agnostic BERT Sentence Embeddings)",
+    "keyword": "KeyBERT + paraphrase-multilingual-MiniLM-L12-v2",
+    "topic_modeling": "BERTopic + UMAP + HDBSCAN"
+  }
+}
