@@ -2,7 +2,7 @@
 
 <p align="center">
   <img src="https://img.shields.io/badge/Python-3.8+-3776AB?style=for-the-badge&logo=python&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Gradio-3.50.2-FF7C00?style=for-the-badge&logo=gradio&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Gradio-6.14.0-FF7C00?style=for-the-badge&logo=gradio&logoColor=white"/>
   <img src="https://img.shields.io/badge/🤗_Hugging_Face-Space-FFD21E?style=for-the-badge"/>
   <img src="https://img.shields.io/badge/License-MIT-2D6A4F?style=for-the-badge"/>
   <img src="https://img.shields.io/badge/Language-EN_↔_ID-C9A84C?style=for-the-badge"/>
@@ -158,7 +158,7 @@ All documents sourced from **open, publicly available government repositories**.
 │               DISTRIBUTION LAYER                            │
 │                                                             │
 │  🤗 Hugging Face Hub    → corpus.json + embeddings.npy     │
-│  🤗 Hugging Face Spaces → Gradio full dashboard            │
+│  🤗 Hugging Face Spaces →  full dashboard            │
 │  📦 GitHub              → source code + 3 notebooks        │
 └─────────────────────────────────────────────────────────────┘
 ```
@@ -291,7 +291,7 @@ Deep-Learning-Indonesian-Legal-Comparator/
 │   └── 03_Deploy_HuggingFace_Space.ipynb
 │
 ├── Demo/
-│   ├── app.py                       ← Gradio full dashboard
+│   ├── app.py                       ←  full dashboard
 │   └── requirements_space.txt
 │
 └── DataSet/
@@ -385,10 +385,10 @@ Fully guided deployment with automatic status monitoring.
 - [x] Gap analysis with adaptive thresholds
 - [x] Semantic search
 - [x] Summarization (naratif / poin / tabel)
-- [x] Gradio full dashboard
+- [x]  full dashboard
 - [x] Hugging Face Hub + Spaces distribution
 - [ ] Expand corpus (UU TPPU, UU Pencucian Uang)
-- [ ] BERTopic visualization in Gradio tab
+- [ ] BERTopic visualization in  tab
 - [ ] Export gap report to PDF
 - [ ] REST API wrapper (FastAPI)
 - [ ] Fine-tuned legal embeddings on Indonesian legal corpus
@@ -423,7 +423,7 @@ Data sources are open government documents:
 - [sentence-transformers](https://www.sbert.net) for LaBSE
 - [BERTopic](https://maartengr.github.io/BERTopic) for topic modeling
 - [KeyBERT](https://github.com/MaartenGr/KeyBERT) for keyword extraction
-- [Gradio](https://gradio.app) for the demo interface
+- [](https://.app) for the demo interface
 
 ---
 
