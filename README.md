@@ -35,7 +35,6 @@
 - [Notebooks](#-notebooks)
 - [Model Details](#-model-details)
 - [Gap Analysis Results](#-gap-analysis-results)
-- [Deploy to Hugging Face](#-deploy-to-hugging-face)
 - [Roadmap](#-roadmap)
 - [License](#-license)
 
@@ -169,13 +168,13 @@ All documents sourced from **open, publicly available government repositories**.
 ## 🚀 Quick Start
 
 ### Option A — Live Demo (No installation)
-Visit: **[huggingface.co/spaces/YOUR_USERNAME/indonesian-legal-comparator-demo](https://huggingface.co/spaces/YOUR_USERNAME/indonesian-legal-comparator-demo)**
+Visit: **[huggingface.co/spaces/WahyuA7/indonesian-legal-comparator-demo](https://huggingface.co/spaces/WahyuA7/indonesian-legal-comparator-demo)**
 
 ### Option B — Run locally
 
 ```bash
 # 1. Clone
-git clone https://github.com/YOUR_USERNAME/indonesian-legal-comparator.git
+git clone https://github.com/WahyuA/indonesian-legal-comparator.git
 cd indonesian-legal-comparator
 
 # 2. Install
@@ -185,7 +184,7 @@ pip install -r requirements.txt
 python -c "
 from huggingface_hub import snapshot_download
 snapshot_download(
-    repo_id   = 'YOUR_USERNAME/indonesian-legal-comparator',
+    repo_id   = 'WahyuA7/indonesian-legal-comparator',
     local_dir = './model_files'
 )
 "
@@ -201,15 +200,6 @@ print(model.daftar_dokumen())
 "
 ```
 
-### Option C — Google Colab
-
-| Notebook | Link |
-|---|---|
-| 01 — Preprocessing | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/YOUR_USERNAME/indonesian-legal-comparator/blob/main/notebooks/01_Preprocessing_Pipeline.ipynb) |
-| 02 — Training & Export | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/YOUR_USERNAME/indonesian-legal-comparator/blob/main/notebooks/02_LegalComparator_Training_Export.ipynb) |
-| 03 — Deploy to HF Space | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/YOUR_USERNAME/indonesian-legal-comparator/blob/main/notebooks/03_Deploy_HuggingFace_Space.ipynb) |
-
----
 
 ## 💡 Usage Examples
 
@@ -384,36 +374,6 @@ Fully guided deployment with automatic status monitoring.
 - Chapter V Articles 51–59 (Asset recovery framework) → partially addressed
 
 ---
-
-## 🚀 Deploy to Hugging Face
-
-### Push model to HF Hub
-```python
-from huggingface_hub import HfApi
-api = HfApi()
-api.upload_folder(
-    folder_path    = "./model_files",
-    repo_id        = "YOUR_USERNAME/indonesian-legal-comparator",
-    repo_type      = "model",
-    commit_message = "Upload Indonesian Legal Comparator v1.0.0"
-)
-```
-
-### Create and deploy Gradio Space
-```python
-api.create_repo(
-    repo_id   = "YOUR_USERNAME/indonesian-legal-comparator-demo",
-    repo_type = "space",
-    space_sdk = "gradio"
-)
-api.upload_folder(
-    folder_path = "./demo",
-    repo_id     = "YOUR_USERNAME/indonesian-legal-comparator-demo",
-    repo_type   = "space"
-)
-```
-
-Or run **Notebook 03** for a fully guided, automated deployment.
 
 ---
 
