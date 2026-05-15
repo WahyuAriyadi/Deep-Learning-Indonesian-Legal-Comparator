@@ -14,9 +14,9 @@
 </p>
 
 <p align="center">
-  <a href="https://huggingface.co/spaces/YOUR_USERNAME/indonesian-legal-comparator-demo">🌐 Live Demo</a>
+  <a href="https://huggingface.co/spaces/WahyuA7/Indonesian_Legal_Comparator">🌐 Live Demo</a>
   &nbsp;·&nbsp;
-  <a href="https://huggingface.co/YOUR_USERNAME/indonesian-legal-comparator">🤗 Model Hub</a>
+  <a href="https://huggingface.co/WahyuA7/indonesian-legal-comparator">🤗 Model Hub</a>
   &nbsp;·&nbsp;
   <a href="#-quick-start">🚀 Quick Start</a>
 </p>
@@ -168,14 +168,14 @@ All documents sourced from **open, publicly available government repositories**.
 ## 🚀 Quick Start
 
 ### Option A — Live Demo (No installation)
-Visit: **[huggingface.co/spaces/WahyuA7/indonesian-legal-comparator-demo](https://huggingface.co/spaces/WahyuA7/indonesian-legal-comparator-demo)**
+Visit: **[huggingface.co/spaces/WahyuA7/Indonesian_Legal_Comparator](https://huggingface.co/spaces/WahyuA7/Indonesian_Legal_Comparator)**
 
 ### Option B — Run locally
 
 ```bash
 # 1. Clone
-git clone https://github.com/WahyuA/indonesian-legal-comparator.git
-cd indonesian-legal-comparator
+git clone https://github.com/WahyuA/Deep-Learning-Indonesian-Legal-Comparator.git
+cd Deep-Learning-Indonesian-Legal-Comparator
 
 # 2. Install
 pip install -r requirements.txt
@@ -276,7 +276,7 @@ hasil = model.compare(doc_a="UU_31_1999", doc_b="UU_20_2001")
 ## 📁 Project Structure
 
 ```
-indonesian-legal-comparator/
+Deep-Learning-Indonesian-Legal-Comparator/
 │
 ├── README.md
 ├── requirements.txt
@@ -285,18 +285,18 @@ indonesian-legal-comparator/
 ├── src/
 │   └── legal_comparator.py          ← Main model class
 │
-├── notebooks/
+├── Program/
 │   ├── 01_Preprocessing_Pipeline.ipynb
 │   ├── 02_LegalComparator_Training_Export.ipynb
 │   └── 03_Deploy_HuggingFace_Space.ipynb
 │
-├── demo/
+├── Demo/
 │   ├── app.py                       ← Gradio full dashboard
 │   └── requirements_space.txt
 │
-└── data/
-    ├── raw/                         ← PDF files (not tracked in git)
-    └── processed/
+└── DataSet/
+    ├── Raw/                         ← PDF files 
+    └── Processed/
         ├── corpus_structured.json   ← Hosted on HF Hub
         └── embeddings_labse.npy     ← Hosted on HF Hub
 ```
